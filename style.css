@@ -1,8 +1,4 @@
 
-/* =========================================
-   1. COLOR PALETTE & GLOBAL SETTINGS
-========================================= */
-
 :root {
     --deep-plum: #21172f;
     --dark-purple: #39264d;
@@ -19,10 +15,6 @@
     --transition: 0.25s ease;
 }
 
-
-/* =========================================
-   2. RESET & BASIC SETTINGS
-========================================= */
 
 * {
     margin: 0;
@@ -71,11 +63,6 @@ section,
 header {
     scroll-margin-top: 6rem;
 }
-
-
-/* =========================================
-   3. NAVIGATION
-========================================= */
 
 .navbar {
     position: relative;
@@ -152,11 +139,6 @@ header {
     background-color: var(--purple);
     transform: translateY(-2px);
 }
-
-
-/* =========================================
-   4. HERO SECTION
-========================================= */
 
 .hero {
     position: relative;
@@ -332,9 +314,7 @@ header {
 }
 
 
-/* =========================================
-   5. HERO IMAGE
-========================================= */
+
 
 .hero-visual {
     position: relative;
@@ -431,9 +411,6 @@ header {
 }
 
 
-/* =========================================
-   6. GENERAL SECTIONS
-========================================= */
 
 main {
     width: 100%;
@@ -482,11 +459,6 @@ main > section:not(.hero) {
 p {
     margin-bottom: 1rem;
 }
-
-
-/* =========================================
-   7. ABOUT ME
-========================================= */
 
 .about-grid {
     display: grid;
@@ -596,10 +568,6 @@ p {
 }
 
 
-/* =========================================
-   8. THINGS I LOVE
-========================================= */
-
 .favorites-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -668,10 +636,6 @@ p {
     color: #c7a8f280;
 }
 
-
-/* =========================================
-   9. PASSION PROJECTS
-========================================= */
 
 .project-card {
     display: grid;
@@ -806,10 +770,6 @@ p {
 }
 
 
-/* =========================================
-   10. CONTACT SECTION
-========================================= */
-
 main > .contact-section {
     position: relative;
     display: flex;
@@ -895,10 +855,6 @@ main > .contact-section {
 }
 
 
-/* =========================================
-   11. FOOTER
-========================================= */
-
 .site-footer {
     display: grid;
     grid-template-columns: auto 1fr auto;
@@ -947,10 +903,6 @@ main > .contact-section {
 }
 
 
-/* =========================================
-   12. KEYBOARD ACCESSIBILITY
-========================================= */
-
 a:focus-visible {
     outline: 3px solid var(--purple);
     outline-offset: 4px;
@@ -959,11 +911,6 @@ a:focus-visible {
 a:focus:not(:focus-visible) {
     outline: none;
 }
-
-
-/* =========================================
-   13. TABLET RESPONSIVENESS
-========================================= */
 
 @media (max-width: 900px) {
 
@@ -999,10 +946,6 @@ a:focus:not(:focus-visible) {
 }
 
 
-/* =========================================
-   14. MOBILE RESPONSIVENESS
-========================================= */
-
 @media (max-width: 600px) {
 
     body {
@@ -1036,8 +979,6 @@ a:focus:not(:focus-visible) {
         display: none;
     }
 
-
-    /* HERO */
 
     .hero {
         display: flex;
@@ -1089,8 +1030,6 @@ a:focus:not(:focus-visible) {
     }
 
 
-    /* GENERAL SECTIONS */
-
     main > section:not(.hero) {
         width: calc(100% - 2rem);
         margin-bottom: 1.5rem;
@@ -1103,8 +1042,6 @@ a:focus:not(:focus-visible) {
         font-size: 2.2rem;
     }
 
-
-    /* ABOUT */
 
     .about-grid {
         grid-template-columns: 1fr;
@@ -1122,8 +1059,6 @@ a:focus:not(:focus-visible) {
     }
 
 
-    /* FAVORITES */
-
     .favorites-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 0.6rem;
@@ -1138,8 +1073,6 @@ a:focus:not(:focus-visible) {
         font-size: 0.75rem;
     }
 
-
-    /* PROJECTS */
 
     .project-card {
         grid-template-columns: 1fr;
@@ -1166,8 +1099,6 @@ a:focus:not(:focus-visible) {
     }
 
 
-    /* CONTACT */
-
     main > .contact-section {
         flex-direction: column;
         align-items: flex-start;
@@ -1191,8 +1122,6 @@ a:focus:not(:focus-visible) {
         justify-content: center;
     }
 
-
-    /* FOOTER */
 
     .site-footer {
         width: calc(100% - 2rem);
@@ -1222,10 +1151,6 @@ a:focus:not(:focus-visible) {
 
 }
 
-
-/* =========================================
-   15. REDUCED MOTION ACCESSIBILITY
-========================================= */
 
 @media (prefers-reduced-motion: reduce) {
 
